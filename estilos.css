@@ -1,0 +1,46 @@
+/* Fichero estilos.css - Creado por Aitor Galán Martín */
+
+/* Selector universal para el cuerpo de la web [cite: 844] */
+body {
+    text-align: center; /* Alineación centrada según tus apuntes [cite: 847] */
+    font-family: 'Arial', sans-serif; /* Uso de tipografías seguras [cite: 595] */
+    background-color: #f4f4f4; /* Color de fondo suave [cite: 584] */
+    color: #333333; /* Color de texto gris oscuro [cite: 778] */
+}
+
+/* Estilos para los encabezados [cite: 777] */
+h1 {
+    color: #000000;
+    font-size: 24px;
+}
+
+/* Estilo para las imágenes [cite: 589] */
+img {
+    border: 2px solid #333;
+    margin-bottom: 15px;
+}
+
+/* Estilo para la tabla de horarios [cite: 759] */
+table {
+    margin: 0 auto; /* Centrar la tabla */
+    border-collapse: collapse;
+    background-color: white;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+/* Estilos para el formulario [cite: 760] */
+fieldset {
+    width: 50%;
+    margin: 20px auto;
+    text-align: left;
+    padding: 20px;
+    background-color: #fff;
+}
+
+label {
+    font-weight: bold;
+}

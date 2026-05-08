@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <title>Registro - Aitor Galán Martín</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <header>
+        <h1>Inscripción de Nuevos Socios</h1>
+        <p><a href="index.html">Volver a la página principal</a></p>
+    </header>
+
+    <hr>
+
+    <form name="inscripcion" method="post" action="#">
+        <fieldset>
+            <legend>Identificación</legend>
+            <label for="nombre">Nombre:</label><br>
+            <input type="text" id="nombre" name="nombre" required><br><br>
+
+            <label for="pin">PIN de acceso:</label><br>
+            <input type="password" id="pin" name="pin" maxlength="4" required>
+        </fieldset>
+
+        <fieldset>
+            <legend>Preferencias</legend>
+            <p>Extras:</p>
+            <input type="checkbox" id="t" name="extra" value="toalla"> Toalla
+            <input type="checkbox" id="q" name="extra" value="taquilla"> Taquilla
+            <input type="checkbox" id="s" name="extra" value="sauna"> Sauna
+
+            <p>Cuota:</p>
+            <input type="radio" name="cuota" value="m" checked> Mensual
+            <input type="radio" name="cuota" value="t"> Trimestral
+            <input type="radio" name="cuota" value="a"> Anual
+        </fieldset>
+
+        <fieldset>
+            <legend>Otros datos</legend>
+            <label>Foto/DNI:</label> <input type="file" name="foto"><br><br>
+            
+            <label>Actividad favorita:</label>
+            <select name="actividad">
+                <option value="spinning">Spinning</option>
+                <option value="yoga">Yoga</option>
+                <option value="zumba">Zumba</option>
+            </select><br><br>
+
+            <label>Observaciones médicas:</label><br>
+            <textarea name="lesiones" rows="3" cols="30"></textarea>
+        </fieldset>
+
+        <br>
+        <input type="submit" value="Enviar alta">
+        <input type="reset" value="Borrar datos">
+    </form>
+</body>
+</html>
